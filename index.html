@@ -1,20 +1,303 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Game Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Hello, I'm [Your Name]</h1>
-    <p>Welcome to my project portfolio.</p>
+    <header>
+        <h1>My Game Dev Portfolio</h1>
+        <p>Programmer, Designer, Level Crafter</p>
+    </header>
 
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Bake It Till You Make It!</h3>
-        <p>A deliciously chaotic 2-player co-op adventure!</p>
-        <a href="https://therambi.itch.io/bitymi">View on Itch</a>
+    <section class="about-split">
+        <div class="about-left">
+            <h2>About Me</h2>
+            <p>
+                I'm a game developer passionate about gameplay systems, AI, and atmospheric design.
+                I love building interactive worlds that challenge players and create tension.
+            </p>
+        </div>
+
+        <div class="about-right">
+            <h3>Contact</h3>
+            <p>Email: thomas.ketelaere@outlook.be</p>
+            <p>GitHub: <a href="https://github.com/Thomas-Ketelaere" target="_blank" rel="noopener noreferrer">Thomas-Ketelaere</a></p>
+            <p>Itch: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">yourusername</a></p>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Finished Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-info">
+                        <h3>Bake It Till You Make It!</h3>
+                        <p class="short-description">A deliciously chaotic 2-player co-op adventure!</p>
+                    </div>
+                    <img src="images/bitymi-logo.png" class="project-logo" alt="Bake It Till You Make It Logo">
+                </div>
+
+                <div class="buttons">
+                    <a href="https://therambi.itch.io/bitymi" target="_blank" rel="noopener noreferrer" class="btn">View on Itch</a>
+                    <button class="btn toggle-info">More Info</button>
+                </div>
+
+                <div class="project-details hidden">
+                    <p><strong>Gameplay:</strong> Strap on your oven mitts and grab your best baking buddy. Bake It Till You Make It! is a wild, sugar-fueled climb up the most outrageous cake you've ever seen! Work together, before a ravenous dessert-devouring Beast gobbles up your sweet escape route!</p>
+                    <p><strong>Personal contributions:</strong></p>
+                    <ul>
+                        <li>Player movement using Polar Coordinates</li>
+                        <li>Made the cake logic (e.g. spawning different sorts of layers, keep track of height of players, ...) </li>
+                        <li>Made the cherry bombs</li>
+                        <li>Implemented all sound</li>
+                        <li>Implemented most of RFX</li>
+                        <li>Implemented most of animations</li>
+                        <li>Implemented tutorial</li>
+                        <li>Implemented controller rumble</li>
+                    </ul>
+                    <p><strong>Tools:</strong> Unity, C#</p>
+                    <div class="extra-media">
+                        <img src="images/bitymi-ss0.png" alt="Screenshot 0">
+                        <img src="images/bitymi-ss1.png" alt="Screenshot 1">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/ZS1UQPGMPz8?si=8smqKKTH72f81Wfi" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-info">
+                        <h3>Bomberman</h3>
+                        <p class="short-description">A Bomberman remake built from scratch using my own game engine</p>
+                    </div>
+                    <img src="images/Bomberman-logo.png" class="project-logo" alt="Bomberman Logo">
+                </div>
+
+                <div class="buttons">
+                    <a href="https://github.com/Thomas-Ketelaere/Prog4ExamAssignment" target="_blank" rel="noopener noreferrer" class="btn">View on Github</a>
+                    <button class="btn toggle-info">More Info</button>
+                </div>
+
+                <div class="project-details hidden">
+                    <p><strong>Info:</strong> For my 4th semester in <a href="https://www.digitalartsandentertainment.be/" target="_blank" rel="noopener noreferrer">Digital Arts & Entertainment</a>, we were asked to build a game engine and remake a classic arcade game in that engine. </p>
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>Component based game loop</li>
+                        <li>Events</li>
+                        <li>Commands for gamepads and keyboard</li>
+                        <li>Sound system</li>
+                        <li>States</li>
+                        <li>Saving High Scores with names</li>
+                    </ul>
+                    <p><strong>Tools:</strong> C++20, Visual Studio</p>
+                    <div class="extra-media">
+                        <img src="images/Bomberman-ss0.png" alt="Screenshot 0">
+                        <img src="images/Bomberman-ss1.png" alt="Screenshot 1">
+                        <img src="images/Bomberman-ss2.png" alt="Screenshot 2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-info">
+                        <h3>The Swing State</h3>
+                        <p class="short-description">A party game where you play a strong-opinioned politician trying to sway others and win the election.</p>
+                    </div>
+                    <img src="images/TheSwingStateLogo.png" class="project-logo" alt="The Swing State Logo">
+                </div>
+
+                <div class="buttons">
+                    <a href="https://choclified.itch.io/the-swing-state" target="_blank" rel="noopener noreferrer" class="btn">View on Itch</a>
+                    <button class="btn toggle-info">More Info</button>
+                </div>
+
+                <div class="project-details hidden">
+                    <p><strong>Gameplay:</strong> Roam the streets hunting for confused or thoughtful citizens—prime targets for your political agenda. Mash buttons to overwhelm them with your beliefs, but watch out: rival politicians can crash the conversation, so don't hesitate to shove them out and claim your loyal follower!</p>
+                    <p><strong>Personal contributions:</strong></p>
+                    <ul>
+                        <li>Civilian movement behaviors</li>
+                        <li>Scene collider design</li>
+                        <li>NavMesh for civilians </li>
+                        <li>Implemented all sound</li>
+                        <li>Implemented player pushing mechanic</li>
+                        <li>Implemented animations</li>
+                        <li>Implemented tutorial</li>
+                        <li>Implemented controller rumble</li>
+                        <li>Implemented a few RFX</li>
+                    </ul>
+                    <p><strong>Tools:</strong> Unity, C#</p>
+                    <div class="extra-media">
+                        <img src="images/TheSwingState-ss0.png" alt="Screenshot 0">
+                        <img src="images/TheSwingState-ss1.png" alt="Screenshot 1">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/gv919iHZqlM?si=ccCSDNMB1FPVG9LJ" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-info">
+                        <h3>Time Chained</h3>
+                        <p class="short-description">You’re a mercenary chained to the past. Conquer the twisted timeline and slay the time-warping master who went mad.</p>
+                    </div>
+                    <img src="images/TimeChained-logo.png" class="project-logo" alt="Time Chained Logo">
+                </div>
+
+                <div class="buttons">
+                    <a href="https://choclified.itch.io/timechained" target="_blank" rel="noopener noreferrer" class="btn">View on Itch</a>
+                    <button class="btn toggle-info">More Info</button>
+                </div>
+
+                <div class="project-details hidden">
+                    <p><strong>Gameplay:</strong> Play as a mercenary trapped in a fractured timeline caused by a mad time lord’s failed quest for immortality. Walk, jump, and shoot as you battle his guardians while the timeline shifts every few seconds, transforming the environment, characters, and bullets around you.</p>
+                    <p><strong>Personal contributions:</strong></p>
+                    <ul>
+                        <li>Player movement</li>
+                        <li>Bullet logic</li>
+                        <li>Level design</li>
+                        <li>Gun rotating</li>
+                        <li>Implemented all sound</li>
+                        <li>Implemented most SFX</li>
+                        <li>Made the shooting trap</li>
+                    </ul>
+                    <p><strong>Tools:</strong> Unity, C#</p>
+                    <div class="extra-media">
+                        <img src="images/TimeChained-ss0.png" alt="Screenshot 0">
+                        <img src="images/TimeChained-ss1.png" alt="Screenshot 1">
+                        <img src="images/TimeChained-ss2.png" alt="Screenshot 2">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Current Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-info">
+                        <h3>Beat Shooter</h3>
+                        <p class="short-description"> A VR game where you shoot to the beat of your own music and rack up points by taking down robots. Time your shots right—only firing on the beat counts.</p>
+                    </div>
+                    <!--<img src="images/bitymi-logo.png" class="project-logo" alt="Bake It Till You Make It Logo">-->
+                </div>
+
+                <div class="buttons">
+                    <!--<a href="https://therambi.itch.io/bitymi" target="_blank" rel="noopener noreferrer" class="btn">View on Itch</a>-->
+                    <button class="btn toggle-info">More Info</button>
+                </div>
+
+                <div class="project-details hidden">
+                    <p><strong>Gameplay:</strong> Step into a rhythm-fueled fight where you take down robots to the beat of your own music. Time your shots perfectly—fire only on the beat, drop your shield to attack, and rack up points by syncing skill and sound.</p>
+                    <p><strong>Info:</strong> This game is still in development and things might still be broken/not working. Feel free to contact me if you find a bug.(:</p>
+                    <p><strong>Inspiration:</strong> This game was inspired by Beat Saber, but I wanted something that let me play my own music, including lesser-known tracks—so I decided to make my own. </p>
+                    <p><strong>Mechanics:</strong></p>
+                    <ul>
+                        <li>This is game that has to be played in VR</li>
+                        <li>You can load your own music. The game will calculate BPM on its own</li>
+                        <li>The lights in the level are an indicator on when the beat is</li>
+                        <li>When there is a part in the song that is more intens (Chorus/Drop/...), a big enemy can spawn, more lights will turn on,...</li>
+                        <li>Enemies (Robots) move between certain points and have a certain chance of shooting on the beat</li>
+                        <li>The bullets of the enemies move faster for a short time on the beat</li>
+                        <li>The player can't shoot when the shield is active</li>
+                    </ul>
+                    <p><strong>Tools:</strong> Unity, C#</p>
+                    <div class="extra-media">
+                        <!--<img src="images/bitymi-ss0.png" alt="Screenshot 0">
+                <img src="images/bitymi-ss1.png" alt="Screenshot 1">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/ZS1UQPGMPz8?si=8smqKKTH72f81Wfi" frameborder="0" allowfullscreen></iframe>
+                </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-info">
+                        <h3>Flip Shot</h3>
+                        <p class="short-description"> Infiltrate hostile zones where gravity constantly shifts, turning the world upside down. Keep an eye on your ammo—you’ll need to manually check it as you adapt to the changing physics.</p>
+                    </div>
+                    <!--<img src="images/bitymi-logo.png" class="project-logo" alt="Bake It Till You Make It Logo">-->
+                </div>
+
+                <div class="buttons">
+                    <a href="https://github.com/Thomas-Ketelaere/FlipShot" target="_blank" rel="noopener noreferrer" class="btn">View on Github</a>
+                    <button class="btn toggle-info">More Info</button>
+                </div>
+
+                <div class="project-details hidden">
+                    <p><strong>Gameplay:</strong> Navigate an ever-changing environment where gravity shifts unpredictably, flipping the world around you and altering how you move and fight. While you infiltrate hostile areas with limited ammo, the main challenge is adapting to the shifting physics and using the changing gravity to your advantage.</p>
+                    <p><strong>Info:</strong> This game is still in early development and things might still be broken/not working. Feel free to contact me if you find a bug.(:</p>
+                    <p><strong>Mechanics:</strong></p>
+                    <ul>
+                        <li>Infiltrate hostile areas using realistic gunplay.</li>
+                        <li>Manually check ammo—no automatic ammo counter; be careful not to run out at critical moments.</li>
+                        <li>Gravity shifts unpredictably, constantly changing the environment’s orientation.</li>
+                        <li>Adapt movement and combat tactics to the changing physics and flipped perspectives.</li>
+                    </ul>
+                    <p><strong>Tools:</strong> Unity, C#</p>
+                    <div class="extra-media">
+                        <!--<img src="images/bitymi-ss0.png" alt="Screenshot 0">
+                <img src="images/bitymi-ss1.png" alt="Screenshot 1">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/ZS1UQPGMPz8?si=8smqKKTH72f81Wfi" frameborder="0" allowfullscreen></iframe>
+                </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with C++, Unity, Unreal, and sleepless nights.</p>
+        <p>your.email@example.com | GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
+    </footer>
+
+    <div class="image-lightbox" id="lightbox">
+        <button class="close-btn" id="lightboxClose">&times;</button>
+        <img id="lightboxImg" src="" alt="Expanded view" />
     </div>
 
+    <script>
+        document.querySelectorAll('.toggle-info').forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.closest('.project-card');
+                const details = card.querySelector('.project-details');
+                details.classList.toggle('hidden');
+                button.textContent = details.classList.contains('hidden') ? 'More Info' : 'Less Info';
+            });
+        });
 
+        document.querySelectorAll('.extra-media img').forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', () => {
+                const lightbox = document.getElementById('lightbox');
+                const lightboxImg = document.getElementById('lightboxImg');
+                lightboxImg.src = img.src;
+                lightbox.style.display = 'flex';
+            });
+        });
+
+        document.getElementById('lightboxClose').addEventListener('click', () => {
+            document.getElementById('lightbox').style.display = 'none';
+        });
+
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) {
+                e.currentTarget.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
