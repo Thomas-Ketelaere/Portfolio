@@ -5,41 +5,54 @@
     box-sizing: border-box;
 }
 
-/* Font and Theme */
 body {
-    font-family: 'Courier New', monospace;
+    background-image: url('images/BackTest.png');
+    background-repeat: repeat;
+    background-size: 2000px 2000px;
+    animation: drift-diagonal 120s linear infinite;
+    color: #e0e0e0;
     background-color: #111;
-    color: #eee;
-    padding: 20px;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+/* Diagonal drift animation */
+@keyframes drift-diagonal {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 1000px 1000px;
+    }
 }
 
 a {
-    color: #66f;
+    color: #4949e3; /* default link blue */
     text-decoration: none;
 }
 
     a:hover {
+        color: #551a8b; /* default visited link purple if you prefer */
         text-decoration: underline;
     }
 
 header {
     text-align: center;
     padding: 40px 20px;
-    background: #222;
-    border: 2px solid #444;
+    background: #000;
+    border: 2px solid #333;
     margin-bottom: 40px;
     box-shadow: 0 0 10px #000;
 }
 
     header h1 {
         font-size: 2.5rem;
-        color: #0ff;
+        color: #f0f0f0;
         text-shadow: 1px 1px 0 #000;
     }
 
     header p {
-        color: #ccc;
+        color: #aaa;
     }
 
 section {
@@ -49,7 +62,7 @@ section {
 .projects h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #0f0;
+    color: #e0e0e0;
     font-size: 2rem;
 }
 
@@ -63,9 +76,9 @@ section {
 
 .project-card {
     width: calc(50% - 15px);
-    background: #222;
+    background: #000;
     padding: 15px;
-    border: 2px solid #333;
+    border: 2px solid #666;
     border-radius: 6px;
     transition: transform 0.3s ease;
     box-shadow: 0 0 10px #000;
@@ -75,7 +88,7 @@ section {
 
     .project-card:hover {
         transform: translateY(-5px);
-        border-color: #0ff;
+        border-color: #999;
     }
 
     .project-card img {
@@ -83,16 +96,16 @@ section {
         height: auto;
         display: block;
         margin-bottom: 10px;
-        border: 2px solid #0ff;
+        border: 2px solid #666;
     }
 
     .project-card h3 {
-        color: #0ff;
+        color: #f0f0f0;
         margin: 10px 0;
     }
 
     .project-card p {
-        color: #ccc;
+        color: #bbb;
         margin-bottom: 10px;
     }
 
@@ -102,7 +115,7 @@ section {
 }
 
 .btn {
-    background: #0ff;
+    background: #ddd;
     color: #000;
     padding: 6px 12px;
     text-align: center;
@@ -112,12 +125,12 @@ section {
 }
 
     .btn:hover {
-        background: #0cc;
+        background: #bbb;
     }
 
     .btn.disabled {
         background: #444;
-        color: #999;
+        color: #888;
         pointer-events: none;
     }
 
@@ -142,9 +155,9 @@ footer {
 
 .project-logo {
     height: 200px;
-    width: 200px; 
-    object-fit: cover; 
-    border: 2px solid #0ff;
+    width: 200px;
+    object-fit: cover;
+    border: 2px solid #555;
     background: #111;
     display: block;
 }
@@ -169,7 +182,7 @@ footer {
 
     .extra-media img {
         width: 100%;
-        border: 2px solid #0ff;
+        border: 2px solid #555;
     }
 
 .video-wrapper {
@@ -198,7 +211,7 @@ footer {
 }
 
 .image-lightbox {
-    display: none; /* hidden by default */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -210,14 +223,12 @@ footer {
     z-index: 1000;
 }
 
-    /* The enlarged image */
     .image-lightbox img {
         max-width: 90%;
         max-height: 90%;
-        border: 4px solid #0ff;
+        border: 4px solid #999;
     }
 
-    /* Close button */
     .image-lightbox .close-btn {
         position: absolute;
         top: 30px;
@@ -233,7 +244,7 @@ footer {
 .project-details ul {
     padding-left: 25px;
     margin-bottom: 10px;
-    color: #ccc;
+    color: #bbb;
 }
 
 .project-details li {
@@ -242,26 +253,31 @@ footer {
 
 .about-split {
     display: flex;
-    width: 100%;
+    justify-content: center; /* center the whole block */
+    gap: 50px; /* optional space between sides */
     margin-bottom: 40px;
 }
 
-/* Left side: About Me aligned right */
-.about-left {
-    flex: 1;
-    text-align: right;
-    padding-right: 20px; /* some space from center */
-    border-right: 1px solid #ccc; /* optional dividing line */
-}
-
-/* Right side: Contact aligned left */
+.about-left,
 .about-right {
-    flex: 1;
-    text-align: left;
-    padding-left: 20px; /* some space from center */
+    width: 25%; /* your preferred size */
+    background: #000;
+    padding-top: 20px; /* add vertical padding */
+    padding-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
 }
 
-/* Picture styling */
+.about-left {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.about-right {
+    text-align: left;
+    padding-left: 20px;
+}
+
 .about-photo {
     width: 180px;
     height: 180px;
