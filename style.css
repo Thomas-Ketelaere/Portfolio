@@ -27,7 +27,7 @@ body {
 }
 
 a {
-    color: #4949e3; 
+    color: #2969ff;
     text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ header {
     }
 
     header p {
-        color: #aaa;
+        color: #e0e0e0;
     }
 
 section {
@@ -72,13 +72,15 @@ section {
     justify-content: space-between;
     gap: 30px;
     align-items: flex-start;
+    margin-right: 200px;
+    margin-left: 200px;
 }
 
 .project-card {
     width: calc(50% - 15px);
     background: #000;
     padding: 15px;
-    border: 2px solid #666;
+    border: 2px solid #e0e0e0;
     border-radius: 6px;
     transition: transform 0.3s ease;
     box-shadow: 0 0 10px #000;
@@ -112,16 +114,25 @@ section {
 .buttons {
     display: flex;
     gap: 10px;
+
 }
 
 .btn {
-    background: #ddd;
-    color: #000;
-    padding: 6px 12px;
+    width: 160px;
+    display: inline-block;
+    background: #222;
+    color: #f0f0f0;
+    padding: 8px 16px;
     text-align: center;
     border-radius: 4px;
     font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2;
     transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #a0a0a0;
 }
 
     .btn:hover {
@@ -263,8 +274,8 @@ footer {
 .about-split {
     display: flex;
     justify-content: center; 
-    gap: 50px;
-    margin-bottom: 40px;
+    gap: 38px;
+    margin-bottom: 60px;
 }
 
 .about-left,
@@ -278,8 +289,16 @@ footer {
 }
 
 .about-left {
-    text-align: right;
-    padding-right: 20px;
+    display: flex;
+    /*align-items: center;*/ /* vertically align text and image */
+    justify-content: space-between; /* push text left, image right */
+    gap: 20px; /* spacing between text and image */
+    text-align: left;
+    padding: 20px;
+}
+
+.about-content {
+    flex: 1; /* text takes up remaining space */
 }
 
 .about-right {
@@ -288,8 +307,8 @@ footer {
 }
 
 .about-photo {
-    width: 400px;
-    height: 400px;
+    width: 180px;
+    height: 230px;
     border-radius: 4%;
     object-fit: cover;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
