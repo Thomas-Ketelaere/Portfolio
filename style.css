@@ -145,12 +145,6 @@ section {
         background: #bbb;
     }
 
-    .btn.disabled {
-        background: #444;
-        color: #888;
-        pointer-events: none;
-    }
-
 .project-footer {
     display: flex;
     justify-content: space-between;
@@ -375,20 +369,20 @@ section {
     }
 
     .about-left {
-        flex-direction: column; /* stack text and image vertically */
-        align-items: center; /* center both horizontally */
-        text-align: center; /* center text */
-        padding: 10px 15px; /* smaller padding for mobile */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+        padding: 10px 15px;
     }
 
     .about-content {
-        width: 100%; /* make text take full width */
-        margin-bottom: 15px; /* space between text and image */
+        width: 100%; 
+        margin-bottom: 15px; 
     }
 
     .about-photo {
-        width: 180px; /* keep reasonable size */
-        height: auto; /* maintain aspect ratio */
+        width: 180px; 
+        height: auto; 
     }
 
     .project-logo {
