@@ -12,7 +12,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-DX4PQST60C');
     </script>
 </head>
@@ -46,22 +45,67 @@
                 My passion lies in developing gameplay systems that bring mechanics to life and connect the different elements of a game.
             </p>
 
-            <br><br>
+            <!--<br><br>
 
             <p>
                 Inspired by titles like Superliminal, I aim to create experiences that challenge players’ perception in clever and engaging ways.
                 After graduation, my goal is to join a studio that values creativity and passion over trends.
-            </p>
+            </p>-->
 
             <br><br>
-            I’m currently looking for a game development internship where I can apply my programming experience in C++ or C#, learn from others in the industry, and continue improving as a developer.
-
+                <p>
+                    I’m currently looking for a game development position where I can apply my programming experience in C++ and C#, collaborate with other developers, and continue growing as a gameplay programmer.
+                </p>
+            
         </div>
     </section>
 
     <section class="projects">
         <h2>Projects</h2>
         <div class="project-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-info">
+                        <h3>Cosmotion</h3>
+                        <p class="short-description">Cosmotion is a fast-paced co-op space adventure where players use hand tracking, face tracking, and tablet motion to battle aliens, save planets, and chase high scores together across a vibrant solar system.</p>
+                    </div>
+                    <img src="images/Cosmotion-StartScreen.png" class="project-logo" alt="Cosmotion Logo">
+                </div>
+
+                <div class="project-footer">
+                    <div class="buttons">
+                        <button class="btn toggle-info">More Info</button>
+                    </div>
+
+                    <div class="tool-icons">
+                        <img src="images/icon-unity.png" alt="Unity" class="tool-icon">
+                        <img src="images/icon-csharp.png" alt="C#" class="tool-icon">
+                    </div>
+                </div>
+
+                <div class="project-details hidden">
+                    <p><strong>Gameplay:</strong> Cosmotion is a cooperative, movement-based space game for mobile where two players team up to conquer planets through energetic exergame challenges. Using tablet motion, hand tracking, and face tracking, players defend their spaceship, escape the lab, swat alien bugs, and help Shroomers across a colorful solar system. Designed with accessibility in mind, Cosmotion turns big upper-body movements into fast, fun, shared gameplay where teamwork, communication, and high scores are the ultimate goal.</p>
+                    <p><strong>Personal contributions:</strong></p>
+                    <ul>
+                        <li>Implemented real-time hand and face tracking with MediaPipe, including gesture detection for open and closed hands</li>
+                        <li>Developed multiplayer gameplay systems and network synchronization using Netcode for GameObjects</li>
+                        <li>Optimized performance and rendering workflows using Unity Profiler and RenderDoc</li>
+                        <li>Created a dynamic music system with adaptive transitions and gameplay stingers</li>
+                        <li>Integrated tablet gyroscope and accelerometer input for motion-based gameplay interactions</li>
+                        <li>Implemented localization support for multiple languages</li>
+                    </ul>
+                    <p><strong>Tools:</strong> Unity, C#</p>
+                    <div class="extra-media">
+                        <img src="images/Cosmotion-ss0.png" alt="Screenshot 0">
+                        <img src="images/Cosmotion-ss1.png" alt="Screenshot 1">
+                        <div class="video-wrapper">
+                            <iframe src="https://youtu.be/1fZcSIRZlBQ?si=RcIbuybP4wu8CRWB" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="project-card">
                 <div class="project-header">
                     <div class="project-info">
@@ -87,14 +131,14 @@
                     <p><strong>Gameplay:</strong> Strap on your oven mitts and grab your best baking buddy. Bake It Till You Make It! is a wild, sugar-fueled climb up the most outrageous cake you've ever seen! Work together, before a ravenous dessert-devouring Beast gobbles up your sweet escape route!</p>
                     <p><strong>Personal contributions:</strong></p>
                     <ul>
-                        <li>Player movement using Polar Coordinates</li>
-                        <li>Made the cake logic (e.g. spawning different sorts of layers, keep track of height of players, ...) </li>
-                        <li>Made the cherry bombs</li>
-                        <li>Implemented all sound</li>
-                        <li>Implemented most of RFX</li>
-                        <li>Implemented most of animations</li>
-                        <li>Implemented tutorial</li>
-                        <li>Implemented controller rumble</li>
+                        <li>Developed player movement systems using polar coordinate mathematics</li>
+                        <li>Designed and implemented core cake gameplay systems, including procedural layer spawning and player height tracking</li>
+                        <li>Created interactive “Cherry Bomb” gameplay mechanics and effects</li>
+                        <li>Integrated and balanced the complete game audio implementation</li>
+                        <li>Implemented a wide range of visual effects and feedback systems using RFX</li>
+                        <li>Integrated and polished gameplay and character animations</li>
+                        <li>Designed and implemented the in-game tutorial flow and onboarding experience</li>
+                        <li>Added controller rumble and haptic feedback to enhance player responsiveness and game feel</li>
                     </ul>
                     <p><strong>Tools:</strong> Unity, C#</p>
                     <div class="extra-media">
@@ -132,11 +176,11 @@
                     <p><strong>Features:</strong></p>
                     <ul>
                         <li>Component based game loop</li>
-                        <li>Events</li>
+                        <li>Events system</li>
                         <li>Commands for gamepads and keyboard</li>
                         <li>Sound system</li>
                         <li>States</li>
-                        <li>Saving High Scores with names</li>
+                        <li>Saving High Scores with player names</li>
                     </ul>
                     <p><strong>Tools:</strong> C++20, Visual Studio</p>
                     <div class="extra-media">
@@ -172,15 +216,15 @@
                     <p><strong>Gameplay:</strong> Roam the streets hunting for confused or thoughtful citizens. Prime targets for your political agenda. Mash buttons to overwhelm them with your beliefs, but watch out: rival politicians can crash the conversation, so don't hesitate to shove them out and claim your loyal follower!</p>
                     <p><strong>Personal contributions:</strong></p>
                     <ul>
-                        <li>Civilian movement behaviors</li>
-                        <li>Scene collider design</li>
-                        <li>NavMesh for civilians </li>
-                        <li>Implemented all sound</li>
-                        <li>Implemented player pushing mechanic</li>
-                        <li>Implemented animations</li>
-                        <li>Implemented tutorial</li>
-                        <li>Implemented controller rumble</li>
-                        <li>Implemented a few RFX</li>
+                        <li>Developed civilian AI movement behaviors and navigation systems</li>
+                        <li>Designed and implemented scene collision layouts for gameplay interactions</li>
+                        <li>Integrated NavMesh pathfinding for dynamic civilian movement</li>
+                        <li>Implemented and balanced the complete game audio system</li>
+                        <li>Created player pushing mechanics with responsive gameplay feedback</li>
+                        <li>Integrated and polished character and gameplay animations</li>
+                        <li>Designed and implemented the in-game tutorial experience</li>
+                        <li>Added controller rumble and haptic feedback for improved game feel</li>
+                        <li>Implemented visual effects and gameplay feedback using RFX</li>
                     </ul>
                     <p><strong>Tools:</strong> Unity, C#</p>
                     <div class="extra-media">
@@ -193,7 +237,7 @@
                 </div>
             </div>
 
-            <div class="project-card">
+            <!--<div class="project-card">
                 <div class="project-header">
                     <div class="project-info">
                         <h3>Time Chained</h3>
@@ -233,7 +277,7 @@
                         <img src="images/TimeChained-ss2.png" alt="Screenshot 2">
                     </div>
                 </div>
-            </div>
+            </div>-->
 
         </div>
 
